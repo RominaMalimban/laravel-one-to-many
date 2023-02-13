@@ -13,4 +13,9 @@ class Post extends Model
         'title',
         'body'
     ];
+
+    // FUNZIONE CHE IDENTIFICA RELAZIONE:
+    public function person(){
+        return $this-> belongsTo(Person::class);
+    }
 }

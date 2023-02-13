@@ -14,4 +14,9 @@ class PersonDetail extends Model
         'address',
         'avatar'
     ];
+
+    // FUNZIONE CHE IDENTIFICA RELAZIONE:
+    public function person(){
+        return $this-> belongsTo(Person::class);
+    }
 }

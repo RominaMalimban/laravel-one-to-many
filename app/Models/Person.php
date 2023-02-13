@@ -13,4 +13,14 @@ class Person extends Model
         'name',
         'mail'
     ];
+
+    // FUNZIONE CHE IDENTIFICA RELAZIONE CON PERSON_DETAILS:
+    public function PersonDetail(){
+        return $this -> hasOne(PersonDetail::class);
+    }
+
+    // FUNZIONE CHE IDENTIFICA RELAZIONE CON POSTS:
+    public function posts(){
+        return $this-> hasMany(Post::class);
+    }
 }
