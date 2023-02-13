@@ -47,6 +47,17 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        // CANCELLIAMO VINCOLI E COLONNE:
+        // Schema::table('posts', function (Blueprint $table) {
+
+        //     $table->dropForeign('posts_person_id_foreign');
+        //     $table->dropColumn('person_id');
+        // });
+
+        // Schema::table('person_details', function (Blueprint $table) {
+            
+        //     $table->dropForeign('person_details_person_id_foreingn');
+        //     $table->dropColumn('person_id');
+        // });
     }
 };
